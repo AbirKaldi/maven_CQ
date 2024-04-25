@@ -1,0 +1,117 @@
+25-Apr-2024 15:04:49.015 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Server version name:   Apache Tomcat/9.0.56
+25-Apr-2024 15:04:49.018 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Server built:          Dec 2 2021 14:30:07 UTC
+25-Apr-2024 15:04:49.018 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Server version number: 9.0.56.0
+25-Apr-2024 15:04:49.019 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke OS Name:               Linux
+25-Apr-2024 15:04:49.019 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke OS Version:            6.2.0-39-generic
+25-Apr-2024 15:04:49.019 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Architecture:          amd64
+25-Apr-2024 15:04:49.019 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Java Home:             /usr/lib/jvm/java-17-openjdk-amd64
+25-Apr-2024 15:04:49.019 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke JVM Version:           17.0.9+9-Ubuntu-123.04
+25-Apr-2024 15:04:49.019 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke JVM Vendor:            Private Build
+25-Apr-2024 15:04:49.019 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke CATALINA_BASE:         /home/jenkins/hello/target/apache-tomee
+25-Apr-2024 15:04:49.019 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke CATALINA_HOME:         /home/jenkins/hello/target/apache-tomee
+25-Apr-2024 15:04:49.180 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Command line argument: -XX:+HeapDumpOnOutOfMemoryError
+25-Apr-2024 15:04:49.180 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dorg.apache.catalina.STRICT_SERVLET_COMPLIANCE=false
+25-Apr-2024 15:04:49.180 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dopenejb.session.manager=org.apache.tomee.catalina.session.QuickSessionManager
+25-Apr-2024 15:04:49.181 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dtomee.remote.support=true
+25-Apr-2024 15:04:49.181 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dopenejb.system.apps=false
+25-Apr-2024 15:04:49.181 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dtomee.jsp-development=true
+25-Apr-2024 15:04:49.181 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.config.file=/home/jenkins/hello/target/apache-tomee/conf/logging.properties
+25-Apr-2024 15:04:49.181 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -javaagent:/home/jenkins/hello/target/apache-tomee/lib/openejb-javaagent.jar
+25-Apr-2024 15:04:49.181 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Apr-2024 15:04:49.182 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.io.tmpdir=/home/jenkins/hello/target/apache-tomee/temp
+25-Apr-2024 15:04:49.182 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.base=/home/jenkins/hello/target/apache-tomee
+25-Apr-2024 15:04:49.182 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.home=/home/jenkins/hello/target/apache-tomee
+25-Apr-2024 15:04:49.182 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.ext.dirs=/home/jenkins/hello/target/apache-tomee/lib
+25-Apr-2024 15:04:49.182 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_HTTP_SEPARATORS_IN_V0=true
+25-Apr-2024 15:04:49.182 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -ea
+25-Apr-2024 15:04:49.198 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+25-Apr-2024 15:04:50.331 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["http-nio-8080"]
+25-Apr-2024 15:04:50.443 SEVERE [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:273)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1213)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1226)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:603)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+25-Apr-2024 15:04:51.382 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'tomee.remote.support=true'
+25-Apr-2024 15:04:51.390 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+25-Apr-2024 15:04:51.629 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+25-Apr-2024 15:04:51.630 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
+25-Apr-2024 15:04:51.631 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Thu Apr 25 15:04:51 WAT 2024
+25-Apr-2024 15:04:51.631 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2021 (C) Apache TomEE Project, All Rights Reserved.
+25-Apr-2024 15:04:51.631 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 8.0.9
+25-Apr-2024 15:04:51.632 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20211223
+25-Apr-2024 15:04:51.632 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 12:34
+25-Apr-2024 15:04:51.633 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+25-Apr-2024 15:04:51.633 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = /home/jenkins/hello/target/apache-tomee
+25-Apr-2024 15:04:51.634 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = /home/jenkins/hello/target/apache-tomee
+25-Apr-2024 15:04:51.635 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@6e950bcf
+25-Apr-2024 15:04:51.637 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
+25-Apr-2024 15:04:51.723 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is '/home/jenkins/hello/target/apache-tomee/conf/tomee.xml'
+25-Apr-2024 15:04:51.833 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+25-Apr-2024 15:04:51.835 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+25-Apr-2024 15:04:51.836 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.system.apps=false'
+25-Apr-2024 15:04:51.837 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.deployments.classpath=false'
+25-Apr-2024 15:04:51.934 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
+25-Apr-2024 15:04:52.105 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
+25-Apr-2024 15:04:52.572 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf)
+25-Apr-2024 15:04:53.384 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
+25-Apr-2024 15:04:53.474 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
+25-Apr-2024 15:04:53.475 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT  
+25-Apr-2024 15:04:53.475 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
+25-Apr-2024 15:04:53.475 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
+25-Apr-2024 15:04:53.475 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Server initialization in [5011] milliseconds
+25-Apr-2024 15:04:53.891 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+25-Apr-2024 15:04:53.892 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
+25-Apr-2024 15:04:54.110 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Starting service [Catalina]
+25-Apr-2024 15:04:54.116 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Starting Servlet engine: [Apache Tomcat/9.0.56]
+25-Apr-2024 15:04:54.187 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application archive [/home/jenkins/hello/target/apache-tomee/webapps/hello-0.0.1-SNAPSHOT.war]
+25-Apr-2024 15:04:54.219 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /hello-0.0.1-SNAPSHOT
+25-Apr-2024 15:04:54.226 INFO [main] org.apache.openejb.util.JarExtractor.extract Extracting jar: /home/jenkins/hello/target/apache-tomee/webapps/hello-0.0.1-SNAPSHOT.war
+25-Apr-2024 15:04:54.257 INFO [main] org.apache.openejb.util.JarExtractor.extract Extracted path: /home/jenkins/hello/target/apache-tomee/webapps/hello-0.0.1-SNAPSHOT
+25-Apr-2024 15:04:54.260 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.session.manager=org.apache.tomee.catalina.session.QuickSessionManager'
+25-Apr-2024 15:04:54.841 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /home/jenkins/hello/target/apache-tomee/webapps/hello-0.0.1-SNAPSHOT
+25-Apr-2024 15:04:55.037 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+25-Apr-2024 15:04:55.039 INFO [main] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean hello-0.0.1-SNAPSHOT.Comp1859965144: Container(type=MANAGED, id=Default Managed Container)
+25-Apr-2024 15:04:55.040 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
+25-Apr-2024 15:04:55.045 INFO [main] org.apache.openejb.core.managed.SimplePassivater.init Using directory /home/jenkins/hello/target/apache-tomee/temp for stateful session passivation
+25-Apr-2024 15:04:55.125 INFO [main] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/home/jenkins/hello/target/apache-tomee/webapps/hello-0.0.1-SNAPSHOT" loaded.
+25-Apr-2024 15:04:55.183 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /home/jenkins/hello/target/apache-tomee/webapps/hello-0.0.1-SNAPSHOT
+25-Apr-2024 15:04:55.683 WARNING [main] org.apache.batchee.container.services.ServicesManager.init You didn't specify org.apache.batchee.jmx.application and JMX is already registered, skipping
+25-Apr-2024 15:04:55.707 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/home/jenkins/hello/target/apache-tomee/webapps/hello-0.0.1-SNAPSHOT)
+25-Apr-2024 15:04:56.070 INFO [main] org.apache.myfaces.ee.MyFacesContainerInitializer.onStartup Using org.apache.myfaces.ee.MyFacesContainerInitializer
+25-Apr-2024 15:04:56.237 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Apr-2024 15:04:56.404 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application archive [/home/jenkins/hello/target/apache-tomee/webapps/hello-0.0.1-SNAPSHOT.war] has finished in [2,216] ms
+25-Apr-2024 15:04:56.501 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Server startup in [3025] milliseconds
+25-Apr-2024 15:43:38.152 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+25-Apr-2024 15:43:38.154 INFO [Thread-8] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["http-nio-8080"]
+25-Apr-2024 15:43:38.154 INFO [Thread-8] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Stopping service [Catalina]
+25-Apr-2024 15:43:38.165 INFO [Thread-8] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /home/jenkins/hello/target/apache-tomee/webapps/hello-0.0.1-SNAPSHOT
+25-Apr-2024 15:43:38.268 WARNING [Thread-8] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=null" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+25-Apr-2024 15:43:38.269 WARNING [Thread-8] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=null" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+25-Apr-2024 15:43:38.304 WARNING [Thread-8] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=null" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+25-Apr-2024 15:43:38.305 INFO [Thread-8] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
+25-Apr-2024 15:43:38.436 INFO [Thread-8] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["http-nio-8080"]
+25-Apr-2024 15:43:38.451 INFO [Thread-8] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["http-nio-8080"]
